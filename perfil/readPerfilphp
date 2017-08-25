@@ -1,0 +1,15 @@
+<?php
+include_once("PerfilCollector.php");
+
+$id =1;
+
+$PerfilCollectorObj = new PerfilCollector();
+
+foreach ($PerfilCollectorObj->showPerfil() as $c){
+  echo "<div>";
+  echo $c->getId() . "  && " .$c->getNombre();                                     
+  echo "</div>"; 
+}
+
+
+?>
